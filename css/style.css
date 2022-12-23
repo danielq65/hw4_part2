@@ -1,0 +1,90 @@
+/*
+File: style.css
+GUI Assignment: Homework #4 Part 2
+Daniel Quinonez, UMass Lowell Computer Science, daniel_quinonezrosario@student.uml.edu
+Copyright (c) 2022 by Daniel. All rights reserved. May be freely copied or excerpted for educational purposes
+with credit to the author.
+Updated by DQ on December 23rd, 2022
+*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* this rule styles the main header of the page */
+h1 {
+    color: white;
+    background-color: rgb(203, 32, 32);
+    text-align: center;
+}
+
+/* this rule styles the header row and header column of the table */
+.table_header {
+    border: solid black;
+    background-color: rgb(203, 32, 32);
+    color: white;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+/* this rule styles the odd numbered children of the table for readability/style purposes */
+.table_cell:nth-child(odd) {
+    border: solid black;
+    color: white;
+    background-color: rgb(2, 205, 212);
+    padding: 10px;
+}
+
+/* styles the even numbered children */
+.table_cell:nth-child(even) {
+    border: solid black;
+    color: white;
+    background-color: rgb(254, 156, 156);
+    padding: 10px;
+}
+
+/* this rule styles the very first cell of the table, for the purpose of making it seem invisible */
+.first_cell {
+    border: none;
+    background-color: white;
+}
+
+/* this rule styles the div that the table is located in for the purpose of creating constraints on the size of the table,
+thus making the table scrollable */
+#mult_table {
+    max-height: 600px;
+    max-width: 600px;
+}
+
+/* styling for the tabs container */
+#myTabs {
+    max-height: 650px;
+    max-width: 650px;
+}
+
+/* this rule styles the error messages for the user input */
+p {
+    color: rgb(254, 156, 156);
+}
+
+form .error {
+    padding: 10px;
+    color: rgb(231, 17, 17);
+}
+
+.slider { 
+    background: rgb(203, 32, 32);
+    margin: 30px 30px 30px 0;
+}
+
+/* this styling for the custom slider handles can be found at this link https://jqueryui.com/slider/#custom-handle */
+#min_col_handle, #max_col_handle, #min_row_handle, #max_row_handle {
+    width: 3em;
+    height: 1.6em;
+    top: 50%;
+    margin-top: -.8em;
+    text-align: center;
+    line-height: 1.6em;
+}
